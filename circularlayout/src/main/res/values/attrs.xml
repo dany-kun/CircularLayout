@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    
+    <declare-styleable name="CircularLayout">
+        <attr name="circle_start" format="integer" />
+        <attr name="circle_end" format="integer" />
+        <attr name="circle_radius" format="dimension" />
+        <attr name="circle_centerRes" format="reference" />
+        <attr name="circle_gravity" />
+        <attr name="circle_centerType" format="enum">
+            <enum name="none" value="0" />
+            <enum name="first" value="1" />
+            <enum name="res" value="2" />
+        </attr>
+        <attr name="item_position" format="enum">
+            <enum name="item_edge" value="0" />
+            <enum name="item_center" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <!-- Standard gravity constant that a child supplies to its parent.
+         Defines how the child view should be positioned, on both the X and Y axes, within its enclosing layout. -->
+    <attr name="circle_gravity">
+        <!-- Push object to the top of its container, not changing its size. -->
+        <flag name="top" value="0x30" />
+        <!-- Push object to the bottom of its container, not changing its size. -->
+        <flag name="bottom" value="0x50" />
+        <!-- Push object to the left of its container, not changing its size. -->
+        <flag name="left" value="0x03" />
+        <!-- Push object to the right of its container, not changing its size. -->
+        <flag name="right" value="0x05" />
+        <!-- Place object in the vertical center of its container, not changing its size. -->
+        <flag name="center_vertical" value="0x10" />
+        <!-- Place object in the horizontal center of its container, not changing its size. -->
+        <flag name="center_horizontal" value="0x01" />
+        <!-- Place the object in the center of its container in both the vertical and horizontal axis, not changing its size. -->
+        <flag name="center" value="0x11" />
+        <!-- Additional option that can be set to have the top and/or bottom edges of
+             the child clipped to its container's bounds.
+             The clip will be based on the vertical gravity: a top gravity will clip the bottom
+             edge, a bottom gravity will clip the top edge, and neither will clip both edges. -->
+        <flag name="clip_vertical" value="0x80" />
+        <!-- Additional option that can be set to have the left and/or right edges of
+             the child clipped to its container's bounds.
+             The clip will be based on the horizontal gravity: a left gravity will clip the right
+             edge, a right gravity will clip the left edge, and neither will clip both edges. -->
+        <flag name="clip_horizontal" value="0x08" />
+        <!--        &lt;!&ndash; Push object to the beginning of its container, not changing its size. &ndash;&gt;
+                <flag name="start" value="0x00800003" />
+                &lt;!&ndash; Push object to the end of its container, not changing its size. &ndash;&gt;
+                <flag name="end" value="0x00800005" />-->
+    </attr>
+
+</resources>
+
