@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <resources>
-    
+
     <declare-styleable name="CircularLayout">
         <attr name="circle_start" format="integer" />
         <attr name="circle_end" format="integer" />
         <attr name="circle_radius" format="dimension" />
         <attr name="circle_centerRes" format="reference" />
+        <attr name="circle_exclude_last" format="boolean" />
         <attr name="circle_gravity" />
         <attr name="circle_centerType" format="enum">
             <enum name="none" value="0" />

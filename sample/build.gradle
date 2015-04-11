@@ -1,21 +1,11 @@
-buildscript {
-    repositories {
-        mavenCentral()
-    }
-
-    dependencies {
-        classpath 'com.android.tools.build:gradle:1.1.0'
-    }
-}
-
-apply plugin: 'com.android.library'
-apply plugin: 'maven-publish'
+apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 21
     buildToolsVersion "21.1.1"
 
     defaultConfig {
+        applicationId "com.smabo.dany_kun.hana"
         minSdkVersion 16
         targetSdkVersion 21
         versionCode 1
@@ -28,16 +18,8 @@ android {
     }
 }
 
-apply plugin: 'maven'
-apply plugin: 'signing'
-
-version = "1.0.0"
-group = "com.sambo.dany_kun"
-
-
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-}
-repositories {
-    mavenCentral()
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile project(':circularlayout')
 }
