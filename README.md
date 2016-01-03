@@ -8,4 +8,4 @@ Custom view group to enable disposing children in a round shape.
 ## Preview
 (from the sample)
 
-![](sample_activity_screen.png)
+![](sample_activity_screen.jpg)
